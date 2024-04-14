@@ -1,7 +1,7 @@
 import ErrorHandler from "../middleware/error.js";
 import { Task } from "../models/task.js";
 
-export const newTask = async(req, res, necxt) => {
+export const newTask = async(req, res, next) => {
    
     try {
         const {title, description} = req.body
